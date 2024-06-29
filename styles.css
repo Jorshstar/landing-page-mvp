@@ -86,11 +86,3 @@ textarea.form-control {
       flex: 0 0 auto;
   }
 }
-@media (min-width: 768px) {
-  .navbar-toggler {
-      display: none;
-  }
-  .navbar-nav.d-lg-none {
-      display: none;
-  }
-}
