@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.nav-tabs .nav-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid teal;
+}
+
+.post {
+  margin-bottom: 1.5rem;
+}
+
+textarea.form-control {
+  resize: vertical; /* Allows the textarea to be resized vertically */
+  min-height: 100px; /* Sets a minimum height */
+}
+
+
+.sidebar-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  padding-top: 1rem;
+}
+
+.sidebar-right {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  padding-top: 1rem;
+}
+
+.btn-primary {
+  background-color: teal;
+  border-color: teal;
+  
+}
+
+.search-bar-container {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  color: dimgrey;
+}
+
+/* Styles for horizontal scrolling profiles */
+.scrolling-wrapper {
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent line breaks */
+}
+.scrolling-wrapper .profile {
+  display: inline-block; /* Display profiles inline */
+  text-align: center; /* Center align text */
+  margin-right: 10px; /* Space between profiles */
+}
+.scrolling-wrapper .profile img {
+  width: 50px; /* Profile image width */
+  height: 50px; /* Profile image height */
+  border-radius: 50%; /* Make profile images circular */
+}
+.scrolling-wrapper .profile div {
+  font-size: 14px; /* Text size for profile names */
+}
+
+
+@media (max-width: 768px) {
+  #sidebar, .sidebar-right {
+      display: none;
+  }
+  .navbar .form-inline {
+      flex: 1;
+  }
+  .nav-tabs {
+      overflow-x: auto;
+      white-space: nowrap;
+      flex-wrap: nowrap;
+  }
+  .nav-item {
+      flex: 0 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-toggler {
+      display: none;
+  }
+  .navbar-nav.d-lg-none {
+      display: none;
+  }
+}
